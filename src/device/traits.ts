@@ -100,6 +100,7 @@ const BY_FAMILY: Readonly<Record<string, Partial<DriverTraits>>> = {
   // The NJ07/NJ08 family keeps the sleep timer in its config block and has no
   // debounce setting in the vendor panel, so only the sleep card.
   ajazz: { advancedSection: true, sleep: true },
+  bloody: {},
 };
 
 const BY_BRAND: Readonly<Record<string, string>> = {
@@ -111,6 +112,7 @@ const BY_BRAND: Readonly<Record<string, string>> = {
   "Attack Shark": "attack-shark",
   IPI: "bytech",
   "Cooler Master": "cooler master",
+  Bloody: "bloody",
 };
 
 export function familyOf(status: MouseStatus): string {

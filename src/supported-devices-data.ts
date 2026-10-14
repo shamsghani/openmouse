@@ -323,6 +323,7 @@ export const SUPPORTED_DEVICES: readonly SupportedDeviceEntry[] = [
   { brand: "RAWM", model: "ES21M", status: "supported", pids: [0x2337] },
   { brand: "RAWM", model: "ER21 Pro", status: "supported", pids: [0x2338] },
   { brand: "RAWM", model: "ER21M", status: "supported", pids: [0x2339] },
+  { brand: "Bloody", model: "W70 Max", status: "supported", pids: [0x1865] },
   { brand: "Bloody", model: "Max W95", status: "driver" },
   { brand: "Fantech", model: "THOR II X16", status: "driver" },
   { brand: "Cooler Master", model: "MasterMouse MM720", status: "driver" },

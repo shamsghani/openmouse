@@ -621,3 +621,14 @@ test("the Glorious Model O2 Pro 4K/8K opens debounce, Motion Sync and the profil
   assert.equal(cards.sleep, false);
   assert.equal(cards.signal, false);
 });
+
+test("hidePollingCard hides the polling rate card even when settings are ready", () => {
+  const cards = cardAvailability(snapshot({
+    status: {
+      brand: "Bloody",
+      ui: { hidePollingCard: true },
+    },
+  }));
+  assert.equal(cards.polling, false);
+});
+
